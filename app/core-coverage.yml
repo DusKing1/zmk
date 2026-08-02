@@ -24,6 +24,14 @@ include:
     nickname: "display"
   - board: nice_nano//zmk
     shield: kyria_left
+    cmake-args: "-DCONFIG_ZMK_DISPLAY=y -DCONFIG_ZMK_DISPLAY_WORK_QUEUE_SYSTEM=y"
+    nickname: "display-system"
+  - board: nice_nano//zmk
+    shield: kyria_left
+    cmake-args: "-DCONFIG_ZMK_DISPLAY=y -DCONFIG_ZMK_DISPLAY_WORK_QUEUE_DEDICATED=y"
+    nickname: "display-dedicated"
+  - board: nice_nano//zmk
+    shield: kyria_left
     cmake-args: "-DCONFIG_ZMK_POINTING=y"
     nickname: "mouse"
   - board: sparkfun_pro_micro_rp2040//zmk
